@@ -1,0 +1,3 @@
+[submodule "Native/SDL2"]
+	path = Native/SDL2
+	url = git@github.com:DWVoid/SDL2.git

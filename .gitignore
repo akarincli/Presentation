@@ -7,3 +7,14 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+*/cmake-build-*
+
+.idea
+*/.idea
+.DS_Store
+*/.DS_Store
+
+[Bb]in
+*/[Bb]in
+[Oo]bj
+*/[Oo]bj

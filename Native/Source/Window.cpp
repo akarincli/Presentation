@@ -2,7 +2,7 @@
 // Created by 刘予顺 on 2019-04-02.
 //
 
-#include "Window.h"
+#include "Config.h"
 #include "SDL2/SDL.h"
 
 AK_PUBLIC uintptr_t AK_CALL akCreateWindow(

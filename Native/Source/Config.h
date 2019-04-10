@@ -28,3 +28,7 @@
 #else
 #  define AK_CALL
 #endif
+
+constexpr int VersionMajor = 0;
+constexpr int VersionMinor = 0;
+constexpr int VersionRevision = 1;

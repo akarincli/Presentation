@@ -1,4 +1,4 @@
-#include "Events.h"
+#include "Application.h"
 #include "SDL2/SDL.h"
 #include <atomic>
 
@@ -92,7 +92,11 @@ namespace {
 
 }
 
-AK_PUBLIC void AK_CALL akAppControlHandOver() noexcept {
+void Application::Init() noexcept {
+    SDL_Init(SDL_INIT_VIDEO);
+}
+
+void Application::ControlHandOver() noexcept {
     running = shouldRun = true;
     SDL_Event event;
     while (shouldRun) {
@@ -102,6 +106,10 @@ AK_PUBLIC void AK_CALL akAppControlHandOver() noexcept {
     running = false;
 }
 
-AK_PUBLIC void AK_CALL akAppStop() noexcept {
+void Application::Stop() noexcept {
     shouldRun = false;
+}
+
+void Application::Finalize() noexcept {
+    SDL_Quit();
 }
